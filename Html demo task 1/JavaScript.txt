@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    function Toggle(value){
+        switch(value){
+            case 'General':
+            document.getElementById('General').style.display="block";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Password':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display=" block";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="none";
+
+            break;
+            case 'Info':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="block";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Notification':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="block";
+            break;
+        }
+    }
+    </script>
+
+
+onclick="Toggle('General')"
+
+onclick="Toggle('Password')"
+
+onclick="Toggle('Info')"
+
+onclick="Toggle('Notification')"
+
+id="General"
+
+id="Password"
+
+id="Info"
+
+id="Notification"
